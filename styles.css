@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #d999f4;
-  animation: disco;
+  /* animation: disco; */
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
@@ -29,11 +29,18 @@ body {
   position: absolute;
   margin: auto;
   transform-style: preserve-3d;
-  animation-name: rotar;
-  animation: up;
-  animation-duration: 4s;
+  /* animation-name: rotar; */
+  /* animation: up; */
+  animation-duration: 1.5s;
   animation-iteration-count: infinite ;
-  transform: rotateX(-25deg) rotateY(40deg);
+  /* transform: rotateX(-25deg) rotateY(40deg) translateZ(-800px); */
+}
+
+.giroCube{
+  transform-origin: 0% 100% 0;
+  animation-name: giroeje;
+  animation-duration: 1;
+  animation-iteration-count: 2;
 }
 
 .cara {
@@ -196,9 +203,21 @@ body {
   }
 }
 
+@keyframes giroeje {
+  0%{
+    transform: rotateZ(0);
+  }
+  /* 50%{
+    transform: rotateZ(45deg);
+  } */
+  80%{
+    transform: rotateZ(-90deg);
+  }
 
-.pixel {
-  background-color: red;
-  height: 100%;
-  width: 100%;
+  82%{
+    transform:rotateZ(-90deg), translateX(-100px);
+  }
+  100%{
+    transform: rotateZ(0);
+  }
 }
