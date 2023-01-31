@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #d999f4;
-  animation: disco;
+  /* animation: disco; */
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
